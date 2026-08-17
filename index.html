@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pedro Lucas Provadelli — Software Engineer in Progress</title>
+<meta name="description" content="Portfólio de Pedro Lucas Provadelli, estudante de Engenharia de Software na FIAP e desenvolvedor em formação." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="progress-thread" aria-hidden="true"><span class="progress-thread__fill"></span></div>
+
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#top" class="header__mark">Pedro Provadelli</a>
+
+    <nav class="header__nav" id="nav">
+      <a href="#sobre" class="header__link"><span>01</span>Sobre</a>
+      <a href="#projetos" class="header__link"><span>02</span>Projetos</a>
+      <a href="#tecnologias" class="header__link"><span>03</span>Tecnologias</a>
+      <a href="#contato" class="header__link"><span>05</span>Contato</a>
+      <a href="https://github.com/Provadelli" target="_blank" rel="noopener" class="header__github">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.19 1.83 1.19 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .32.21.67.8.56C20.21 21.38 23.5 17.07 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+      </a>
+    </nav>
+
+    <button class="header__burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre" class="mobile-menu__link">Sobre</a>
+  <a href="#projetos" class="mobile-menu__link">Projetos</a>
+  <a href="#tecnologias" class="mobile-menu__link">Tecnologias</a>
+  <a href="#trajetoria" class="mobile-menu__link">Trajetória</a>
+  <a href="#contato" class="mobile-menu__link">Contato</a>
+  <a href="https://github.com/Provadelli" target="_blank" rel="noopener" class="mobile-menu__link mobile-menu__link--gold">GitHub ↗</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__field" aria-hidden="true">
+      <svg class="hero__grid" viewBox="0 0 100 100" preserveAspectRatio="none"><defs><pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M 8 0 L 0 0 0 8" fill="none" stroke="currentColor" stroke-width="0.08"/></pattern></defs><rect width="100" height="100" fill="url(#grid)"/></svg>
+      <span class="hero__blob hero__blob--1"></span>
+      <span class="hero__blob hero__blob--2"></span>
+    </div>
+
+    <div class="hero__inner">
+      <p class="eyebrow reveal">FIAP · Engenharia de Software · Web Development</p>
+
+      <h1 class="hero__title">
+        <span class="reveal reveal--1">Software</span>
+        <span class="reveal reveal--2">Engineer</span>
+        <span class="hero__title-italic reveal reveal--3">in progress.</span>
+      </h1>
+
+      <p class="hero__lede reveal reveal--4">Transformando ideias em soluções digitais, interfaces e produtos de software — um commit de cada vez.</p>
+
+      <div class="hero__actions reveal reveal--5">
+        <a href="#projetos" class="btn btn--gold magnetic"><span>Ver projetos</span></a>
+        <a href="https://github.com/Provadelli" target="_blank" rel="noopener" class="btn btn--ghost magnetic"><span>GitHub</span></a>
+      </div>
+    </div>
+
+    <div class="hero__portrait reveal reveal--6">
+      <div class="hero__portrait-frame" id="portraitFrame">
+        <img src="assets/pedro.png" alt="Retrato de Pedro Lucas Provadelli" />
+        <span class="hero__ring"></span>
+      </div>
+      <span class="hero__caption">Pedro Lucas<br><em>Provadelli</em></span>
+    </div>
+
+    <a href="#sobre" class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      role scroll
+    </a>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="section__inner">
+      <p class="eyebrow reveal">01 — Sobre</p>
+      <div class="about">
+        <div class="about__text reveal">
+          <p>Sou estudante de Engenharia de Software na FIAP, interessado em desenvolvimento web, Python, automação e criação de soluções digitais.</p>
+          <p>Além dos projetos acadêmicos, desenvolvo projetos próprios e soluções digitais — buscando transformar problemas reais em produtos funcionais, do primeiro commit ao deploy.</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="stat reveal">
+            <span class="stat__label">FIAP</span>
+            <span class="stat__value">Engenharia de Software</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__label">Web</span>
+            <span class="stat__value">Desenvolvimento</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__label">Python</span>
+            <span class="stat__value">Programação</span>
+          </div>
+          <div class="stat reveal">
+            <span class="stat__label">Build</span>
+            <span class="stat__value">Projetos próprios</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section section--alt" id="projetos">
+    <div class="section__inner">
+      <div class="section__head">
+        <p class="eyebrow reveal">02 — Projetos selecionados</p>
+        <h2 class="section__title reveal">Do repositório<br><em>para o mundo real.</em></h2>
+      </div>
+
+      <div class="projects">
+
+        <article class="card card--project reveal" data-tilt>
+          <div class="card__glow" aria-hidden="true"></div>
+          <div class="card__media card__media--pelescout">
+            <svg viewBox="0 0 200 140" class="card__art"><circle cx="100" cy="70" r="46" fill="none" stroke="currentColor" stroke-width="1"/><path d="M60 70a40 40 0 0 1 80 0" fill="none" stroke="currentColor" stroke-width="1"/><line x1="100" y1="24" x2="100" y2="116" stroke="currentColor" stroke-width="0.6"/><line x1="54" y1="70" x2="146" y2="70" stroke="currentColor" stroke-width="0.6"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">PeleScout NextGen</h3>
+            <p class="card__desc">Plataforma esportiva que conecta atletas, clubes e oportunidades, democratizando o acesso a peneiras e processos de avaliação.</p>
+            <div class="card__tags">
+              <span>Web</span><span>TypeScript</span><span>UI/UX</span>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/Provadelli/Pel-NextGen" target="_blank" rel="noopener" class="card__link">Ver repositório ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--project reveal" data-tilt>
+          <div class="card__glow" aria-hidden="true"></div>
+          <div class="card__media card__media--space">
+            <svg viewBox="0 0 200 140" class="card__art"><rect x="60" y="30" width="80" height="80" fill="none" stroke="currentColor" stroke-width="1" transform="rotate(45 100 70)"/><circle cx="100" cy="70" r="6" fill="currentColor"/><circle cx="100" cy="70" r="30" fill="none" stroke="currentColor" stroke-width="0.6" stroke-dasharray="3 4"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Space Guardian</h3>
+            <p class="card__desc">Projeto acadêmico de sistemas embarcados, voltado para monitoramento e autonomia de bordo.</p>
+            <div class="card__tags">
+              <span>C++</span><span>Arduino</span><span>Tinkercad</span>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/Provadelli/GS--Sistema-de-Autonomia-de-Bordo" target="_blank" rel="noopener" class="card__link">Ver repositório ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--project reveal" data-tilt>
+          <div class="card__glow" aria-hidden="true"></div>
+          <div class="card__media card__media--np">
+            <svg viewBox="0 0 200 140" class="card__art"><path d="M40 100 L90 40 L120 75 L160 30" fill="none" stroke="currentColor" stroke-width="1"/><circle cx="160" cy="30" r="3" fill="currentColor"/><circle cx="90" cy="40" r="3" fill="currentColor"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">NP Code Solutions</h3>
+            <p class="card__desc">Desenvolvimento de sites e soluções digitais sob medida para empresas, do briefing ao ar.</p>
+            <div class="card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Vercel</span>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/Provadelli/NP-Code-Solutions" target="_blank" rel="noopener" class="card__link">Ver repositório ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--project reveal" data-tilt>
+          <div class="card__glow" aria-hidden="true"></div>
+          <div class="card__media card__media--shine">
+            <svg viewBox="0 0 200 140" class="card__art"><circle cx="100" cy="70" r="4" fill="currentColor"/><line x1="100" y1="70" x2="100" y2="30" stroke="currentColor" stroke-width="0.6"/><line x1="100" y1="70" x2="135" y2="90" stroke="currentColor" stroke-width="0.6"/><line x1="100" y1="70" x2="65" y2="90" stroke="currentColor" stroke-width="0.6"/><circle cx="100" cy="30" r="2.5" fill="currentColor"/><circle cx="135" cy="90" r="2.5" fill="currentColor"/><circle cx="65" cy="90" r="2.5" fill="currentColor"/></svg>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">Shine Rio</h3>
+            <p class="card__desc">Experiência digital que reúne serviços e informações empresariais em um único cartão de visitas.</p>
+            <div class="card__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="card__actions">
+              <a href="https://github.com/Provadelli/Site-Railo" target="_blank" rel="noopener" class="card__link">Ver repositório ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section class="section" id="tecnologias">
+    <div class="section__inner">
+      <p class="eyebrow reveal">03 — Tecnologias</p>
+
+      <div class="tech">
+        <div class="tech__col reveal">
+          <h3 class="tech__heading">Development</h3>
+          <div class="tech__badges">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">C++</span>
+          </div>
+        </div>
+        <div class="tech__col reveal">
+          <h3 class="tech__heading">Tools</h3>
+          <div class="tech__badges">
+            <span class="badge">Git</span>
+            <span class="badge">GitHub</span>
+            <span class="badge">VS Code</span>
+            <span class="badge">Vercel</span>
+          </div>
+        </div>
+        <div class="tech__col reveal">
+          <h3 class="tech__heading">Currently learning</h3>
+          <div class="tech__badges">
+            <span class="badge badge--gold">Estruturas de Dados</span>
+            <span class="badge badge--gold">Banco de Dados</span>
+            <span class="badge badge--gold">Engenharia de Software</span>
+            <span class="badge badge--gold">APIs</span>
+            <span class="badge badge--gold">Inteligência Artificial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>JavaScript</span><span>·</span><span>Python</span><span>·</span><span>C++</span><span>·</span><span>Git</span><span>·</span><span>GitHub</span><span>·</span><span>Vercel</span><span>·</span>
+        <span>HTML</span><span>·</span><span>CSS</span><span>·</span><span>JavaScript</span><span>·</span><span>Python</span><span>·</span><span>C++</span><span>·</span><span>Git</span><span>·</span><span>GitHub</span><span>·</span><span>Vercel</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAJETORIA -->
+  <section class="section section--alt" id="trajetoria">
+    <div class="section__inner">
+      <p class="eyebrow reveal">04 — Trajetória</p>
+
+      <div class="timeline">
+        <svg class="timeline__thread" viewBox="0 0 4 400" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="2" y1="0" x2="2" y2="400" />
+        </svg>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__dot"></span>
+          <h3 class="timeline__title">FAETEC</h3>
+          <p class="timeline__desc">Técnico em Eletrônica</p>
+        </div>
+        <div class="timeline__item reveal">
+          <span class="timeline__dot"></span>
+          <h3 class="timeline__title">Desenvolvimento Web</h3>
+          <p class="timeline__desc">Primeiros projetos e experiências com criação de sites.</p>
+        </div>
+        <div class="timeline__item reveal">
+          <span class="timeline__dot"></span>
+          <h3 class="timeline__title">NP Code Solutions</h3>
+          <p class="timeline__desc">Desenvolvimento de sites e soluções digitais.</p>
+        </div>
+        <div class="timeline__item reveal">
+          <span class="timeline__dot"></span>
+          <h3 class="timeline__title">FIAP</h3>
+          <p class="timeline__desc">Engenharia de Software.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contact" id="contato">
+    <div class="section__inner">
+      <p class="eyebrow reveal">05 — Vamos construir algo?</p>
+      <h2 class="contact__title reveal">Tem uma ideia, projeto<br>ou oportunidade? <em>Vamos conversar.</em></h2>
+
+      <div class="contact__rows reveal">
+        <a href="https://github.com/Provadelli" target="_blank" rel="noopener" class="contact__row magnetic">
+          <span class="contact__row-label">GitHub</span>
+          <span class="contact__row-value">github.com/Provadelli</span>
+          <span class="contact__row-arrow">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/pedroprovadellidev/" target="_blank" rel="noopener" class="contact__row magnetic">
+          <span class="contact__row-label">LinkedIn</span>
+          <span class="contact__row-value">in/pedroprovadellidev</span>
+          <span class="contact__row-arrow">↗</span>
+        </a>
+        <a href="mailto:pedroprovadelli@gmail.com" class="contact__row magnetic">
+          <span class="contact__row-label">Email</span>
+          <span class="contact__row-value">pedroprovadelli@gmail.com</span>
+          <span class="contact__row-arrow">↗</span>
+        </a>
+      </div>
+
+      <a href="mailto:pedroprovadelli@gmail.com" class="btn btn--gold btn--lg magnetic reveal"><span>Entrar em contato</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="footer__name">Pedro Lucas</span>
+      <span class="footer__role">Software Engineering · FIAP</span>
+    </div>
+    <div class="footer__links">
+      <a href="https://github.com/Provadelli" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/pedroprovadellidev/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+    <span class="footer__copy">© 2026 Pedro Lucas</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
