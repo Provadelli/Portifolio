@@ -404,7 +404,7 @@ a:focus-visible, button:focus-visible{
 }
 .card__art{ width: 60%; height: 60%; transition: transform .6s var(--ease); }
 .card--project:hover .card__art{ transform: scale(1.08) rotate(-2deg); }
-.card__body{ padding: 30px; }
+.card__body{ padding: 40px; }
 .card__title{ font-family: var(--font-display); font-size: 24px; font-weight: 500; margin: 0 0 10px; }
 .card__desc{ font-size: 15px; line-height: 1.6; color: var(--ink-soft); margin: 0 0 20px; }
 .card__tags{ display:flex; flex-wrap:wrap; gap:8px; margin-bottom: 24px; }
